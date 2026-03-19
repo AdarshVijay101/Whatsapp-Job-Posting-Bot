@@ -1,6 +1,6 @@
 import json
 import logging
-from typing import Dict, Any, Tuple
+from typing import Dict, Any, Tuple, List
 from app.config import settings
 from app.validators.guardrails import ParsedJobData
 from app.integrations.whatsapp import wa_client
