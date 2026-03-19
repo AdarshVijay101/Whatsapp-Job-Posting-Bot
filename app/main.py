@@ -49,7 +49,7 @@ def health_check():
     return {
         "status": "ok", 
         "wa_configured": bool(settings.whatsapp_access_token),
-        "sheets_configured": bool(settings.google_service_account_json_path),
+        "sheets_configured": sheets_client.is_functional(),
         "openai_configured": bool(settings.openai_api_key),
         "server_time": datetime.now(timezone.utc).isoformat()
     }

@@ -60,21 +60,34 @@ class SheetsClient:
             # Try loading from ENV VAR first (for Cloud Hosting)
             env_creds = os.getenv("GOOGLE_SERVICE_ACCOUNT_JSON_DATA")
             
+            credentials = None
             if env_creds:
                 logger.info("Authenticating with Google Service Account from Environment Variable")
-                creds_dict = json.loads(env_creds)
-                credentials = service_account.Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
-            elif self.json_path and os.path.exists(self.json_path):
+                try:
+                    creds_dict = json.loads(env_creds)
+                    credentials = service_account.Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
+                except json.JSONDecodeError as je:
+                    logger.error(f"GOOGLE_SERVICE_ACCOUNT_JSON_DATA is not valid JSON: {je}")
+                except Exception as ee:
+                    logger.error(f"Error parsing GOOGLE_SERVICE_ACCOUNT_JSON_DATA: {ee}")
+            
+            if not credentials and self.json_path and os.path.exists(self.json_path):
                 logger.info(f"Authenticating with Google Service Account from file: {self.json_path}")
                 credentials = service_account.Credentials.from_service_account_file(self.json_path, scopes=SCOPES)
-            else:
-                logger.error("No Google Service Account credentials found (no file and no GOOGLE_SERVICE_ACCOUNT_JSON_DATA env var)")
+            
+            if not credentials:
+                logger.error("Google Sheets Initialization Failed: No valid credentials found (check GOOGLE_SERVICE_ACCOUNT_JSON_DATA or path)")
                 return
 
             self.service = build('sheets', 'v4', credentials=credentials)
+            logger.info(f"Google Sheets initialized successfully. Service Account: {credentials.service_account_email}")
             self._ensure_tabs_exist()
         except Exception as e:
-            logger.exception(f"Failed to authenticate with Google Sheets API: {e}")
+            logger.exception(f"Google Sheets Initialization Failed with Exception: {str(e)}")
+
+    def is_functional(self) -> bool:
+        """Returns True if the Google Sheets service is authenticated and ready."""
+        return self.service is not None and self.spreadsheet_id is not None
 
     def _ensure_tabs_exist(self):
         if not self.service or not self.spreadsheet_id:
