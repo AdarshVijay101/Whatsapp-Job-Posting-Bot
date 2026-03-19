@@ -1,0 +1,1 @@
+{'error': {'message': '(#132001) Template name does not exist in the translation', 'type': 'OAuthException', 'code': 132001, 'error_data': {'messaging_product': 'whatsapp', 'details': 'template name (job_post_notification) does not exist in en_GB'}, 'fbtrace_id': 'A0MumdCtBiTGKU4j2g8bfS0'}}

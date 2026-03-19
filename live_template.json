@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "name": "job_post_notification",
+      "previous_category": "UTILITY",
+      "parameter_format": "NAMED",
+      "components": [
+        {
+          "type": "BODY",
+          "text": "New job opportunity available:\n\nRole: {{job_title}}\nLocation: {{location}}\nSalary: {{salary}}\nWork Authorization: {{work_authorization}}\n\nPosted By:\n{{submitter_name}}\n\nJob Summary:\n{{job_summary}}\n\nApply here:\n{{application_link}}\n\nReply STOP to opt out.",
+          "example": {
+            "body_text_named_params": [
+              {
+                "param_name": "job_title",
+                "example": "AI Engineer"
+              },
+              {
+                "param_name": "location",
+                "example": "Reston, VA"
+              },
+              {
+                "param_name": "salary",
+                "example": "70000"
+              },
+              {
+                "param_name": "work_authorization",
+                "example": "OPT"
+              },
+              {
+                "param_name": "submitter_name",
+                "example": "ADARSH"
+              },
+              {
+                "param_name": "job_summary",
+                "example": "This is a job description"
+              },
+              {
+                "param_name": "application_link",
+                "example": "https://www.metacareers.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": "FOOTER",
+          "text": "Tillian AI Job Alerts"
+        }
+      ],
+      "language": "en",
+      "status": "APPROVED",
+      "category": "MARKETING",
+      "id": "852931257794860"
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "QVFIUzBkUWZAGelMybUtIM0JmOXhQeUdZATFcyUFdyU1lWWlJDU280UF83Mmg5dDdsLUI4cXAxd1c3RlhBZA2JibEl2YnZARU2hHUkE4eklpZATQ4blhHSVpkdmdR",
+      "after": "QVFIUzBkUWZAGelMybUtIM0JmOXhQeUdZATFcyUFdyU1lWWlJDU280UF83Mmg5dDdsLUI4cXAxd1c3RlhBZA2JibEl2YnZARU2hHUkE4eklpZATQ4blhHSVpkdmdR"
+    }
+  }
+}

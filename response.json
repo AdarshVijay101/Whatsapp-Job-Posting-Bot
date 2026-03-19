@@ -1,0 +1,15 @@
+{
+  "messaging_product": "whatsapp",
+  "contacts": [
+    {
+      "input": "13027728945",
+      "wa_id": "13027728945"
+    }
+  ],
+  "messages": [
+    {
+      "id": "wamid.HBgLMTMwMjc3Mjg5NDUVAgARGBJDMUQ5QUREMzNGRDBBRTEwMTEA",
+      "message_status": "accepted"
+    }
+  ]
+}

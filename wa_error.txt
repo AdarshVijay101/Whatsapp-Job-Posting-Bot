@@ -1,0 +1,4 @@
+﻿Sending WA template to 13027728945...
+Msg ID: None
+Status: FAILED
+Raw Response: {'error': {'message': '(#100) Invalid parameter', 'type': 'OAuthException', 'code': 100, 'error_data': {'messaging_product': 'whatsapp', 'details': 'Parameter name is missing or empty'}, 'fbtrace_id': 'AJnVyZ8pwSQjvw0y-H1HALb'}}

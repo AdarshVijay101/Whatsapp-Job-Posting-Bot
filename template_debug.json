@@ -1,0 +1,66 @@
+{
+  "data": [
+    {
+      "name": "job_post_notification",
+      "language": "en",
+      "status": "PENDING",
+      "components": [
+        {
+          "type": "BODY",
+          "text": "New job opportunity available:\n\nRole: {{role}}\nLocation: {{location}}\nType: {{job_type}}\nRate: {{rate}}\n\nRecruiter:\n{{recruiter_name}}\n{{recruiter_contact}}\n\nPrime Vendor:\n{{prime_vendor}}\n\nJob Description:\n{{job_description}}\n\nApply here:\n{{application_link}}\n\nReply STOP to opt out.",
+          "example": {
+            "body_text_named_params": [
+              {
+                "param_name": "role",
+                "example": "Senior Data Engineer"
+              },
+              {
+                "param_name": "location",
+                "example": "Remote (USA)"
+              },
+              {
+                "param_name": "job_type",
+                "example": "Contract (C2C)"
+              },
+              {
+                "param_name": "rate",
+                "example": "$70/hr"
+              },
+              {
+                "param_name": "recruiter_name",
+                "example": "John Smith"
+              },
+              {
+                "param_name": "recruiter_contact",
+                "example": "john.smith@staffingco.com"
+              },
+              {
+                "param_name": "prime_vendor",
+                "example": "ABC Consulting LLC"
+              },
+              {
+                "param_name": "job_description",
+                "example": "We are looking for an experienced Cloud Infrastructure Engineer to design, implement, and maintain scalable cloud environments. The role involves working with AWS infrastructure, containerized applications, and CI/CD pipelines to support enterprise systems."
+              },
+              {
+                "param_name": "application_link",
+                "example": "https://company.com/apply"
+              }
+            ]
+          }
+        },
+        {
+          "type": "FOOTER",
+          "text": "Tillian AI Job Alerts"
+        }
+      ],
+      "id": "852931257794860"
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "QVFIUzBkUWZAGelMybUtIM0JmOXhQeUdZATFcyUFdyU1lWWlJDU280UF83Mmg5dDdsLUI4cXAxd1c3RlhBZA2JibEl2YnZARU2hHUkE4eklpZATQ4blhHSVpkdmdR",
+      "after": "QVFIUzBkUWZAGelMybUtIM0JmOXhQeUdZATFcyUFdyU1lWWlJDU280UF83Mmg5dDdsLUI4cXAxd1c3RlhBZA2JibEl2YnZARU2hHUkE4eklpZATQ4blhHSVpkdmdR"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "messaging_product": "whatsapp",
+  "to": "13027728945",
+  "type": "template",
+  "template": {
+    "name": "job_post_notification",
+    "language": {
+      "code": "en"
+    },
+    "components": [
+      {
+        "type": "body",
+        "parameters": [
+          {
+            "type": "text",
+            "parameter_name": "role",
+            "text": "Senior Cloud Infrastructure Engineer"
+          },
+          {
+            "type": "text",
+            "parameter_name": "location",
+            "text": "Remote (EST preferred)"
+          },
+          {
+            "type": "text",
+            "parameter_name": "job_type",
+            "text": "f6f637e6-6b3c-4902-892d-f73e5bef3ba3"
+          },
+          {
+            "type": "text",
+            "parameter_name": "rate",
+            "text": "True"
+          },
+          {
+            "type": "text",
+            "parameter_name": "recruiter_name",
+            "text": "Alex Mercer"
+          },
+          {
+            "type": "text",
+            "parameter_name": "recruiter_contact",
+            "text": "alex.mercer@techstaffing-solutions.com | +14155552671"
+          },
+          {
+            "type": "text",
+            "parameter_name": "prime_vendor",
+            "text": "Apex Systems Integration"
+          },
+          {
+            "type": "text",
+            "parameter_name": "application_link",
+            "text": "https://alex.mercer@techstaffing-solutions.com/"
+          }
+        ]
+      }
+    ]
+  }
+}

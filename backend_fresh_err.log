@@ -1,0 +1,46 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\kadar\\OneDrive\\Desktop\\Winning Edge Solutions\\Google Sheets Form']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [77512] using WatchFiles
+INFO:     Started server process [55096]
+INFO:     Waiting for application startup.
+2026-03-16 17:26:28,842 [INFO] api - ==================================================
+2026-03-16 17:26:28,842 [INFO] api - \U0001f680 WHATSAPP JOB POSTER BACKEND STARTING
+2026-03-16 17:26:28,843 [INFO] api - ==================================================
+2026-03-16 17:26:28,844 [INFO] api - LOCAL ENDPOINT: http://localhost:8000/ingest
+2026-03-16 17:26:28,844 [INFO] api - TALLY WEBHOOK URL: <Your-Public-Tunnel-URL>/ingest
+2026-03-16 17:26:28,844 [INFO] api - TALLY HEALTH CHECK: <Your-Public-Tunnel-URL>/tally-health
+2026-03-16 17:26:28,844 [INFO] api - EXPECTED HEADER: X-Tally-Secret: a554****
+2026-03-16 17:26:28,845 [INFO] api - ==================================================
+INFO:     Application startup complete.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\kadar\miniconda3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\kadar\miniconda3\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kadar\miniconda3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\kadar\miniconda3\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kadar\miniconda3\Lib\site-packages\starlette\routing.py", line 701, in lifespan
+    await receive()
+  File "C:\Users\kadar\miniconda3\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kadar\miniconda3\Lib\asyncio\queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+INFO:     Stopping reloader process [77512]

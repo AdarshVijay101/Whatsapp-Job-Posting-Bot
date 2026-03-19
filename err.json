@@ -1,0 +1,37 @@
+{
+  "submission_id": "9445ef7a-8db1-48f4-ae37-3eed0f59d087",
+  "validation_status": "PASSED",
+  "debug": {
+    "seen_labels": [
+      "job title",
+      "location",
+      "job type",
+      "rate / salary",
+      "detailed job description",
+      "work authorization",
+      "application link",
+      "recruiter name",
+      "recruiter email",
+      "recruiter phone",
+      "prime vendor name",
+      "prime vendor contact",
+      "confirmation checkbox",
+      "confirmation checkbox (i confirm that all information provided is accurate and includes recruiter and prime vendor details.)"
+    ],
+    "mapped_keys": [
+      "job_title",
+      "location",
+      "job_type",
+      "rate",
+      "job_description",
+      "application_link",
+      "recruiter_name",
+      "recruiter_email",
+      "recruiter_phone",
+      "prime_vendor_name",
+      "prime_vendor_contact"
+    ]
+  },
+  "posted_status": "FAILED",
+  "wa_prefill_link": "https://wa.me/?text=%F0%9F%9A%A8%20%2ANEW%20JOB%20POSTING%2A%20%F0%9F%9A%A8%0A%0A%2ASenior%20Cloud%20Infrastructure%20Engineer%2A%0A%F0%9F%93%8D%20Location%3A%20Remote%20%28EST%20preferred%29%0A%F0%9F%92%BC%20Type%3A%20f6f637e6-6b3c-4902-892d-f73e5bef3ba3%0A%F0%9F%92%B0%20Rate%3A%20True%0A%0A%F0%9F%91%A4%20%2ARecruiter%3A%2A%20Alex%20Mercer%0A%F0%9F%93%A7%20Email%3A%20alex.mercer%40techstaffing-solutions.com%0A%F0%9F%93%9E%20Phone%3A%20%2B14155552671%0A%0A%F0%9F%8F%A2%20%2APrime%20Vendor%3A%2A%20Apex%20Systems%20Integration%0A%F0%9F%93%A9%20Contact%3A%20vendor-management%40apex-sys.com%0A%0A%F0%9F%91%89%20%2AApply%20Here%3A%2A%20https%3A//alex.mercer%40techstaffing-solutions.com/%0A%0A%F0%9F%93%9D%20%2ADescription%3A%2A%0AWe%20are%20looking%20for%20an%20experienced%20Senior%20Cloud%20Infrastructure%20Engineer%20to%20join%20our%20rapidly%20scaling%20backend%20team.%20In%20this%20role%2C%20you%20will%20be%20responsible%20for%20designing%2C%20building%2C%20and%20maintaining%20robust%20Kubernetes%20clusters%20across%20AWS%20and%20Azure%20environments.%20The%20ideal%20candidate%20will%20have%20deep%20expertise%20in%20Infrastructure%20as%20Code%20%28specifically%20Terraform%20and%20Pulumi%29%20and%20a%20strong%20background%20in%20automating%20deployment%20pipelines%20via%20GitHub%20Actions.%0A%0AYou%20will%20collaborate%20closely%20with%20our%20product%20and%20security%20teams%20to%20ensure%20all%20cloud%20resources%20are%20provisioned%20securely%20and%20in%20compliance%20with%20SOC2%20standards.%20We%20expect%20candidates%20to%20have%20at%20least%205%20years%20of%20production-level%20experience%20managing%20containerized%20workloads%20and%20setting%20up%20advanced%20monitoring%20dashboards%20using%20Datadog%20and%20Prometheus.%20Experience%20migrating%20legacy%20monolithic%20applications%20into%20microservices%20architectures%20is%20highly%20preferred.%0A%0AThis%20is%20a%20long-term%20position%20with%20the%20opportunity%20to%20transition%20into%20a%20full-time%20lead%20role%20after%20the%20initial%2012-month%20contract%20period%20concludes.%20If%20you%20are%20passionate%20about%20building%20scalable%2C%20resilient%20systems%20and%20enjoy%20mentoring%20junior%20DevOps%20engineers%2C%20we%20encourage%20you%20to%20apply%20today%21"
+}

@@ -1,0 +1,53 @@
+{
+  "messaging_product": "whatsapp",
+  "to": "13027728945",
+  "type": "template",
+  "template": {
+    "name": "job_post_notification",
+    "language": {
+      "code": "en"
+    },
+    "components": [
+      {
+        "type": "body",
+        "parameters": [
+          {
+            "type": "text",
+            "parameter_name": "job_title",
+            "text": "E2E Webhook Test Engineer"
+          },
+          {
+            "type": "text",
+            "parameter_name": "location",
+            "text": "Remote (Cloud)"
+          },
+          {
+            "type": "text",
+            "parameter_name": "salary",
+            "text": "$150k - $200k"
+          },
+          {
+            "type": "text",
+            "parameter_name": "work_authorization",
+            "text": "US Citizen / GC"
+          },
+          {
+            "type": "text",
+            "parameter_name": "submitter_name",
+            "text": "Tillian Test Bot"
+          },
+          {
+            "type": "text",
+            "parameter_name": "job_summary",
+            "text": "Testing the end-to-end WhatsApp status callback pipeline."
+          },
+          {
+            "type": "text",
+            "parameter_name": "application_link",
+            "text": "https://tillianai.com/jobs/test"
+          }
+        ]
+      }
+    ]
+  }
+}
