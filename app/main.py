@@ -372,7 +372,6 @@ def verify_webhook(
     
     logger.warning(f"[FAILED] Token mismatch or invalid mode. Mode: {hub_mode}")
     return Response(content="Forbidden", status_code=403)
-    return Response(content="Verification failed", status_code=403)
 
 @app.post("/webhook")
 async def receive_webhook(request: Request):
