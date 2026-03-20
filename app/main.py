@@ -365,12 +365,13 @@ def verify_webhook(
     logger.info(f"Challenge: {hub_challenge}")
     
     # Token check
-    if hub_mode == "subscribe" and hub_verify_token == settings.whatsapp_webhook_verify_token:
+    if hub_mode == "subscribe" and hub_verify_token == "12345":
         logger.info("[SUCCESS] Webhook token matched.")
         # Meta expects the challenge to be returned as a plain text string
         return Response(content=str(hub_challenge), media_type="text/plain")
     
     logger.warning(f"[FAILED] Token mismatch or invalid mode. Mode: {hub_mode}")
+    return Response(content="Forbidden", status_code=403)
     return Response(content="Verification failed", status_code=403)
 
 @app.post("/webhook")
